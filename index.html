@@ -1,0 +1,498 @@
+<html class="h-full" lang="tr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="https://cdn.revenisis.com/images/RevR.png">
+		<link rel="apple-touch-icon" type="image/png" href="https://cdn.revenisis.com/images/RevR.png">
+		<title>Revenisis: Mühendislik Çözümleri</title>
+
+		<link rel="preload" href="https://revenisis.com/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="https://revenisis.com/fonts/Inter-Regular.woff" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="https://revenisis.com/fonts/AktivGrotesk-Bold.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="https://revenisis.com/fonts/AktivGrotesk-Bold.woff" as="font" type="font/woff2" crossorigin>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
+		<style media="all" id="fa-kit-upload"></style>
+
+		<style>
+			:root {
+				--accent-color: #ff8a3b;
+				--accent2-color: #ffb74d;
+				--accent3-color: #6e68a5;
+				--accent4-color: #22b599;
+				--primary-color: #0b0c1a;
+				--dark-text-color: #000000;
+				--gray-text-color: #828282;
+				--button-padding-x: 16px;
+				--button-padding-y: 12px;
+				--font-family-body: 'Inter';
+				--font-family-body-2: 'Inter';
+				--light-text-color: #e2e6ea;
+        		--light-text-color-2: #b8bcc4;
+				--dark-border-color: #1f1f26;
+				--light-border-color: #bbd1ec;
+				--font-family-heading: 'Aktiv Grotesk Bold';
+				--button-rounded-radius: 4px;
+				--dark-background-color: #0b0c1a;
+				--light-background-color: #e8eef5;
+				--medium-background-color: #d5e1f0;
+				--primary-button-bg-color: #0b0c1a;
+				--primary-button-text-color: #ffffff;
+				--secondary-button-bg-color: #e2e6ea;
+				--secondary-button-text-color: #0b0c1a;
+				--primary-button-hover-bg-color: #3ba9ff;
+				--primary-button-hover-text-color: #e2e6ea;
+				--secondary-button-hover-bg-color: #b2bcc5;
+				--secondary-button-hover-text-color: #0b0c1a;
+			}
+
+			@font-face {
+				font-family: 'Aktiv Grotesk Bold';
+				src: url('https://revenisis.com/fonts/AktivGrotesk-Bold.woff2') format('woff2'),
+					url('https://revenisis.com/fonts/AktivGrotesk-Bold.woff') format('woff');
+				font-weight: bold;
+				font-style: normal;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: 'Inter';
+				src: url('https://revenisis.com/fonts/Inter-Regular.woff2') format('woff2'),
+					url('https://revenisis.com/fonts/Inter-Regular.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: 'TT Norms Pro';
+				src: url('https://revenisis.com/fonts/TT_Norms_Pro_Trial_Normal.woff2') format('woff2'),
+					url('https://revenisis.com/fonts/TT_Norms_Pro_Trial_Normal.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="frame-root">
+			<div class="frame-content bg-black">
+				<div class="[font-family:var(--font-family-body-2)]">
+					<!-- Mobile Menu (off-canvas) -->
+					<div id="mobile-menu" class="fixed top-0 right-0 z-50 w-72 h-screen bg-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+						<div class="flex justify-end p-4">
+							<button id="mobile-menu-close" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+								<i class="fa-solid fa-chevron-down text-2xl"></i>
+							</button>
+						</div>
+						<div class="overflow-y-auto h-[calc(100vh-64px)] p-4">
+							<ul class="site-nav-wrap space-y-1">
+								<li>
+									<a href="https://revenisis.com/hakkımızda" class="block px-4 py-2 rounded hover:bg-gray-100">Hakkımızda</a>
+								</li>
+								<li>
+									<a href="https://revenisis.com/mühendislik" class="block px-4 py-2 rounded hover:bg-gray-100">Mühendislik</a>
+								</li>
+								<li>
+									<a href="https://revenisis.com/üretim" class="block px-4 py-2 rounded hover:bg-gray-100">Üretim</a>
+								</li>
+								<li>
+									<a href="https://revenisis.com/referanslarımız" class="block px-4 py-2 rounded hover:bg-gray-100">Referanslarımız</a>
+								</li>
+								<li>
+									<a href="https://revenisis.com/iletişim" class="block px-4 py-2 rounded hover:bg-gray-100">İletişim</a>
+								</li>
+								<li class="mt-4 border-t pt-4">
+									<div class="flex justify-around">
+										<a href="https://revenisis.com/" class="px-2 py-1 text-gray-700 font-semibold">TR</a>
+										<a href="https://revenisis.com/en/" class="px-2 py-1 text-gray-700 hover:font-semibold">EN</a>
+										<a href="https://revenisis.com/de/" class="px-2 py-1 text-gray-700 hover:font-semibold">DE</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<header class="sticky top-0 inset-x-0 z-40">
+						<!-- Top Bar -->
+						<div class="border-b border-white/40 bg-transparent text-white text-sm">
+							<div class="container mx-auto px-4 py-3 flex flex-col lg:flex-row items-center lg:justify-between">
+								<div class="flex space-x-6 mb-2 lg:mb-0">
+									<a href="mailto:info@revenisis.com" class="flex items-center space-x-2">
+										<i class="fa-solid fa-envelope"></i>
+										<span class="inline">info@revenisis.com</span>
+									</a>
+									<div class="flex items-center space-x-2">
+										<i class="fa-solid fa-phone"></i>
+										<span class="inline">+90 505 766 2939</span>
+									</div>
+								</div>
+								<div class="flex space-x-4">
+									<a href="https://www.linkedin.com/company/revenisis/?originalSubdomain=en" class="p-1 sm:p-2">
+										<i class="fa-brands fa-linkedin"></i>
+									</a>
+									<a href="https://www.linkedin.com/in/suray-vatan-b3672711/" class="p-1 sm:p-2">
+										<i class="fa-brands fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Main Navbar -->
+						<div id="main-navbar" class="js-sticky-header transition-colors duration-300 ease-in-out bg-black">
+							<div class="container mx-auto px-4 py-4 flex items-center justify-between max-w-auto lg:max-w-screen-xl xl:max-w-auto">
+								<!-- Logo -->
+								<div class="flex-shrink-0">
+									<a href="https://revenisis.com/"><img src="https://cdn.revenisis.com/images/rev-logo-temiz.png" alt="Revenisis: Engineering Solutions" class="h-12" /></a>
+								</div>
+								<!-- Desktop Menu -->
+								<nav class="hidden lg:flex space-x-8 items-center text-white">
+									<a href="https://revenisis.com/hakkımızda" class="relative py-2 px-3 text-white/60 hover:text-white font-medium"> Hakkımızda </a>
+									<a href="https://revenisis.com/mühendislik" class="py-2 px-3 text-white/60 hover:text-white font-medium"> Mühendislik </a>
+									<a href="https://revenisis.com/üretim" class="py-2 px-3 text-white/60 hover:text-white font-medium"> Üretim </a>
+									<a href="https://revenisis.com/referanslarımız" class="py-2 px-3 text-white/60 hover:text-white font-medium">Referanslarımız</a>
+									<a href="https://revenisis.com/iletişim" class="py-2 px-3 text-white/60 hover:text-white font-medium">İletişim</a>
+									<div class="flex items-center space-x-2">
+										<a href="https://revenisis.com" class="text-white font-medium">TR</a>
+										<span class="text-white/40">|</span>
+										<a href="https://revenisis.com/en" class="text-white/60 hover:text-white font-medium">EN</a>
+										<span class="text-white/40">|</span>
+										<a href="https://revenisis.com/de" class="text-white/60 hover:text-white font-medium">DE</a>
+									</div>
+								</nav>
+								<!-- Mobile Toggle -->
+								<button id="mobile-menu-open" class="lg:hidden text-white p-2 focus:outline-none js-menu-toggle">
+									<i class="fa-solid fa-bars text-2xl"></i>
+								</button>
+							</div>
+						</div>
+					</header>
+				</div>
+			</div>
+			<div class="frame-content">
+				<div class="[font-family:var(--font-family-body)]">
+					<div>
+						<section class="overflow-hidden code-section" id="s0nyfzq">
+							<div class="relative md:h-[700px]">
+								<div class="absolute inset-0 z-0 h-full w-full bg-cover bg-center object-cover brightness-75 lg:brightness-100 bg-[url(&quot;https://cdn.revenisis.com/images/abstract-car-2_copy.jpg&quot;)]" data-landingsite-gallery-type="image" data-seo-image="" aria-label="Smiling construction professionals exchanging a handshake as part of their partnership on site. Happy engineer shaking hands at construction site with happy businessman. Handshake between middle eastern construction manager with architect at building site, conclude an agreement." data-media="{&quot;id&quot;:&quot;2187596750&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}"></div>
+								<div class="absolute inset-0 z-10 hidden w-3/5 bg-gradient-to-r from-black to-transparent lg:block"></div>
+								<div class="container relative z-10 mx-auto px-6 py-6 xl:px-12 2xl:px-36">
+									<div class="flex h-full flex-col pt-10 lg:flex-row">
+										<div class="p-10 text-center lg:w-1/2 lg:text-left">
+											<h3 class="pb-8 text-base font-medium tracking-widest text-[var(--light-text-color-2)]">HASSAS MÜHENDİSLİK, ETKİ İÇİN TASARLANDI</h3>
+											<h1 class="mb-6 text-3xl font-semibold text-[var(--light-text-color)] [font-family:var(--font-family-heading)] lg:text-6xl">Yenilik Odaklı Hassas Üretim</h1>
+											<p class="mb-8 text-base font-normal tracking-wide text-[var(--light-text-color)]">Revenisis, yüksek hassasiyet, verimlilik ve özelleştirme talep eden şirketler için son teknoloji mühendislik ve üretim çözümleri sunar. 3D tarama ve kalite kontrolden CNC işleme ve prototiplemeye kadar, yeni başlayanlar, KOBİ'ler ve endüstriyel liderler için ölçeklenebilir çözümler sunuyoruz.</p>
+											<a href="https://revenisis.com/iletişim" class="inline-block bg-[var(--primary-color)] px-8 py-4 text-base [font-family:var(--font-family-heading)] tracking-widest text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]">BİZE ULAŞIN</a>
+										</div>
+									</div>
+								</div>
+								<div class="absolute bottom-[-1px] z-20 w-full">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" class="relative left-1/2 h-[150px] w-[150%] -translate-x-1/2 transform">
+										<path class="fill-white" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"></path>
+									</svg>
+								</div>
+							</div>
+						</section>
+						<section class="py-4 md:py-8 code-section" id="ourservices">
+							<div class="container mx-auto py-12 sm:py-20 xl:px-12 2xl:px-24">
+								<div class="flex flex-col">
+									<h3 class="pb-8 text-center text-base font-medium uppercase tracking-widest text-[var(--primary-color)] [font-family:var(--font-family-heading)] lg:text-left">13 Yılı Aşkın Tecrübemizle</h3>
+									<div class="flex flex-col pb-8 sm:flex-row">
+										<div class="mb-8 flex-1 text-balance text-center text-4xl font-semibold [font-family:var(--font-family-heading)] lg:text-left">Hizmetlerimiz</div>
+										<div class="flex-1 text-center text-xl lg:text-left">Revenisis, dijital modellemeden yüksek hassasiyetli üretime kadar modern endüstri ihtiyaçlarını karşılamak için tasarlanmış eksiksiz bir mühendislik ve üretim çözümleri paketi sunar. </div>
+									</div>
+
+									<div class="xl:flex gap-5">
+										<div class="lg:flex mx-auto gap-5 mb-6 lg:mb-8">
+											<!-- Optical & Laser Scanning -->
+											<div class="flex flex-1 flex-col border-[var(--light-border-color)] mb-6 lg:mb-0 lg:max-w-xs">
+												<img class="h-44 object-cover lg:max-h-none" src="https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/model-manufacturing-2.jpg" alt="Optical & Laser Scanning">
+												<div class="py-4 text-center text-2xl font-semibold [font-family:var(--font-family-heading)]">Bileşen ve Parça İmalatı</div>
+												<div class="px-8 pb-4 text-center">Metal parçalardan RTM modellerine ve CNC uyumlu fikstürlere kadar, hem tekli hem de seri üretim için özel olarak tasarlanmış tutarlı, düşük toleranslı üretim sunuyoruz.</div>
+											</div>
+
+											<!-- Dimensional Quality Control -->
+											<div class="flex flex-1 flex-col border-[var(--light-border-color)] mb-6 lg:mb-0 lg:max-w-xs">
+												<img class="h-44 object-cover lg:max-h-none" src="https://cdn.revenisis.com/images/engineering-manufacturing/engineering/20231109_145338.jpg" alt="Dimensional Quality Control">
+												<div class="py-4 text-center text-2xl font-semibold [font-family:var(--font-family-heading)]">Gelişmiş 3D Tarama, <br> Kalite Kontrol, <br> Tersine Mühendislik</div>
+												<div class="px-8 pb-4 text-center">Optik ve lazer sistemleri kullanarak hassas boyut kontrolü, tersine mühendislik ve dijital dokümantasyon sağlıyoruz. İş akışımız CAD dönüşümünü ve eski parça dijitalleştirmesini destekler.</div>
+											</div>
+
+											<!-- Reverse Engineering -->
+											<div class="flex flex-1 flex-col border-[var(--light-border-color)] lg:max-w-xs">
+												<img class="h-44 object-cover lg:max-h-none" src="https://cdn.revenisis.com/images/engineering-manufacturing/engineering/product-design.jpg" alt="Reverse Engineering">
+												<div class="py-4 text-center text-2xl font-semibold [font-family:var(--font-family-heading)]">Özel Ürün ve Fikstür Tasarımı</div>
+												<div class="px-8 pb-4 text-center">Yapısal analiz ve ergonomik ihtiyaçlar doğrultusunda üretime hazır bileşenler ve üretim fikstürleri tasarlıyoruz. Tüm çıktılar CAD'e hazırdır ve özel uygulamanız için uyarlanmıştır.</div>
+											</div>
+										</div>
+										<div class="lg:flex lg:mx-48 mx-auto xl:mx-auto gap-5">
+											<!-- Prototyping -->
+											<div class="flex flex-1 flex-col border-[var(--light-border-color)] lg:max-w-md mb-6 lg:mb-0 lg:max-w-xs">
+												<img class="h-44 object-cover lg:max-h-none" src="https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/prototype.jpg" alt="Product & Fixture Designing">
+												<div class="py-4 text-center text-2xl font-semibold [font-family:var(--font-family-heading)]">FDM/SLA 3D Baskı ile Prototipleme</div>
+												<div class="px-8 pb-4 text-center">FDM ve SLA 3D baskı ile Ar-Ge'yi hızlandırın. Prototiplerimiz yüksek yüzey kalitesi ve işlevsel doğruluk sunar - görsel doğrulama, uyum testi ve erken aşama iyileştirme için mükemmeldir.</div>
+											</div>
+
+											<!-- PU Casting -->
+											<div class="flex flex-1 flex-col border-[var(--light-border-color)] lg:max-w-md lg:max-w-xs">
+												<img class="h-44 object-cover lg:max-h-none" src="https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/glo-ep-pu-casting_16-9.png" alt="PU Casting">
+												<div class="py-4 text-center text-2xl font-semibold [font-family:var(--font-family-heading)]">Poliüretan Döküm</div>
+												<div class="px-8 pb-4 text-center">Yüksek performanslı polimerler kullanarak açılır tavan rayları ve kayar bileşenler gibi dayanıklı PU parçalar üretiyoruz. Önceden hazırlanmış kalıplardan dökülen bu parçalar; mekanik mukavemeti, uzun vadeli boyutsal stabilite ile birleştirir.</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="code-section" id="s5mqodi">
+							<div class="bg-[var(--primary-color)]">
+								<div class="container relative z-10 mx-auto px-6 py-12 lg:py-40 xl:px-12 2xl:px-36">
+									<div class="flex flex-col-reverse lg:flex-row lg:space-x-12">
+										<div class="flex-1 text-[var(--light-text-color)]">
+											<div class="mb-6 text-balance text-center text-5xl font-semibold [font-family:var(--font-family-heading)] lg:text-left">Parçadan Dijital Ürüne: Hassas Tersine Mühendislik</div>
+											<div class="text-center text-xl font-light lg:text-left">Revenisis'te Tersine Mühendislik hizmetimiz, fiziksel bileşenlerinizi ve montajlarınızı hassas, düzenlenebilir dijital modellere dönüştürür. Yüksek hassasiyetli koordinat ölçüm makinelerinin (CMM) yanı sıra mobil ve sabit lazer tarayıcıların bir kombinasyonunu kullanarak, her geometrik detayı nokta bulutu ve yüzey verileri olarak yakalıyoruz. Bu ham veriler daha sonra endüstri standardı metroloji yazılımı aracılığıyla işlenerek orijinal parçanın biçimini ve işlevini aslına sadık bir şekilde kopyalayan CAD dosyaları oluşturulur. <br>
+												<br> İster artık kullanılmayan bileşenleri yeniden oluşturmak ister mevcut tasarımları daha iyi performans için optimize etmek istiyor olun, mühendislerimiz veri yakalamadan son teslimata kadar iş akışına rehberlik eder. Her modelin tam spesifikasyonlarınızı karşıladığından emin olmak için özellik tanıma, yüzey yeniden yapılandırma ve tolerans analizi gerçekleştiriyoruz. İşlevsel ve malzeme özelliklerini CAD ortamına entegre ederek simülasyon, test ve süreç planlama gibi sonraki faaliyetleri de mümkün kılıyoruz. <br> 
+												<br> Yaptığımız işin temelinde işbirliği yatıyor. İlk saha araştırmasından CAD çıktılarının teslimine kadar ekibimiz, her aşamada ilerlemeyi, içgörüleri ve önerileri paylaşarak sizinle yakın bir şekilde çalışır. İlerlemeye hazır mısınız? <a href="https://revenisis.com/iletişim">iletişim formumuz</a> aracılığıyla bize ulaşın veya <a href="mailto:info@revenisis.com">info@revenisis.com</a> adresinden doğrudan e-posta gönderin. Teknik vizyonunuzu uzun ömürlü somut bir çözüme dönüştürelim.
+											</div>
+										</div>
+										<div class="mb-12 flex-1 text-[var(--light-text-color)]">
+											<img class="max-h-64 w-full object-cover lg:max-h-none" alt="Two professionals in formal attire examine and interact with flowing digital wave on colorful background, representing data science. Concept of scientific discovery and innovation, , information. Ad" src="https://cdn.revenisis.com/images/engineering-manufacturing/engineering/reveng.png" data-landingsite-gallery-type="image" data-media="{&quot;id&quot;:&quot;2183468112&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="relative code-section" id="s15l1x">
+							<div class="absolute inset-0 h-full w-full bg-cover bg-center object-cover brightness-[0.2] bg-[url(&quot;https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/929661a6-72b4-4612-b85c-2fcfffb63a00/public&quot;)]" data-landingsite-gallery-type="image" aria-label="Concentrated Black Female Engineer Writing Code. Developing Software for Modern Drone Control in the Research Center Laboratory. Technological Breakthrough in Flight Industries Concept." data-media="{&quot;id&quot;:&quot;1449084209&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}"></div>
+							<div>
+								<div class="container relative z-10 mx-auto px-6 py-12 lg:py-40 xl:px-12 2xl:px-36">
+									<div class="flex flex-col lg:flex-row lg:space-x-12">
+										<div class="mb-12 flex-1">
+											<img class="max-h-64 w-full object-cover lg:max-h-none mb-6 lg:mb-12" alt="Industrial Data Automation System On Computer. Engineer Operator" src="https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/20220415_180522.jpg" data-landingsite-gallery-type="image" data-media="{&quot;id&quot;:&quot;2150332096&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+											<img class="max-h-64 w-full object-cover lg:max-h-none" src="https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/20240217_164010.jpg" alt="">
+										</div>
+										<div class="flex-1 text-[var(--light-text-color)]">
+											<div class="mb-6 text-balance text-center text-5xl font-semibold [font-family:var(--font-family-heading)] lg:text-left">Modelden İşlenmiş Gerçekliğe: Gelişmiş Parça ve Fikstür Üretimi</div>
+											<div class="text-center text-xl font-light lg:text-left">Revenisis'te, uçtan uca CNC işleme uzmanlığımız sayesinde dijital modelleri tamamen işlevsel bileşenlere dönüştürüyoruz. Yüksek doğruluklu RTM prototipleri veya CAD çıktıları ile başlayarak, metal ve metal olmayan parçaları mikron düzeyinde hassasiyetle şekillendirmek için son teknoloji ürünü çok eksenli frezeleri programlıyoruz. Her takım yolu yüzey kalitesi, sıkı toleranslar ve malzeme bütünlüğü için optimize edilerek kavramsal tasarımlarınızın üretime hazır gerçeklikler haline gelmesi sağlanır. <br>
+												<br> Parça üretim kabiliyetlerimiz, tek parçalı kavram kanıtlama çalışmalarının yanı sıra ölçeklendirilmiş parti üretimini de kapsamaktadır. Havacılık ve uzay sınıfı alaşımlardan mühendislik plastiklerine kadar, malzeme israfını ve döngü süresini en aza indiren kesme stratejileri ve spindle hızları seçiyoruz. Proses içi problama ve gerçek zamanlı geri bildirim döngüleri, her aşamada boyutsal doğruluğu onaylayarak, yeniden işleme olmadan montajınıza sorunsuz bir şekilde yerleştirilen parçalar sunmaktadır. <br>
+												<br> İşleme sürecini tamamlamak için fikstür tasarım hizmetimiz, parça geometrisinize göre özel olarak tasarlanmış jigler, kelepçeler ve iş parçası bağlama çözümleri üretir. Fikstür CAD ile CNC takım yollarını önceden entegre ederek, kurulum süreçlerini kolaylaştırıyor ve seri üretimdeki değişkenleri ortadan kaldırıyoruz. Sağlam fikstür sistemleri yalnızca verimi artırmakla kalmaz, aynı zamanda yüzlerce veya binlerce tekrarda tutarlılığı da korur. <br>
+												<br> Projelerinizi geliştirmeye hazır mısınız? Bizimle bugün bağlantı kurun ve size özel çözümlerimizin başarınızı nasıl artırabileceğini keşfedin. <a href="https://revenisis.com/iletişim">İletişim formumuz</a> aracılığıyla bize ulaşın veya <a href="mailto:info@revenisis.com">info@revenisis.com</a> adresinden doğrudan e-posta gönderin. Birlikte fikirlerinizi gerçeğe dönüştürelim.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="code-section" id="su2z40l">
+							<div class="bg-[#ffffff]">
+								<div class="container relative z-10 mx-auto py-12 lg:py-40 xl:px-12 2xl:px-36">
+									<div class="flex flex-col-reverse lg:flex-row lg:space-x-12">
+										<div class="flex-1 text-[var(--dark-text-color)]">
+											<div class="mb-6 text-balance text-center text-5xl font-semibold [font-family:var(--font-family-heading)] lg:text-left">Üretim Sınıfı Parçalar için Yüksek Dayanıklılıkta Poliüretan Döküm</div>
+											<div class="text-center text-xl font-light lg:text-left"> 
+												Revenisis'te Poliüretan Döküm hizmetimiz, karmaşık tasarımlarınızı olağanüstü bir yüzey kalitesi ve sıkı boyut kontrolü ile dayanıklı, yüksek doğrulukta bileşenlere dönüştürür. Hassas işlenmiş kalıplar ve özenle seçilmiş PU formülasyonları kullanarak, sert yapısal parçalardan esnek contalara kadar her şeyi kopyalıyor ve her dökümün tam mekanik ve termal gereksinimlerinizi karşılamasını sağlıyoruz. Hızlı prototipleme çalışmaları ve küçük seri üretim, büzülmeyi ve hava sıkışmasını ortadan kaldıran optimize edilmiş karışım oranları ve kür profilleri ile sorunsuz bir şekilde şirket içinde gerçekleştirilir. <br>
+												<br> İster işlevsel prototiplere, ister pilot üretim partilerine, ister geleneksel plastik ve kauçuğa rakip özelliklere sahip son kullanım parçalarına ihtiyacınız olsun, anahtar teslimi döküm iş akışımız uygun maliyetli takımlar ve hızlandırılmış teslim süreleri sunar. Üretime hazır PU bileşenleri için malzeme uzmanlığımızdan ve süreç şeffaflığımızdan (numune doğrulama raporları ve sürekli destek ile birlikte) yararlanmak için Revenisis ile iş ortaklığı yapın. Hassas Poliüretan Döküm ile projenizi yükseltmeye hazır mısınız? Başlamak için <a href="https://revenisis.com/iletişim">iletişim formumuz</a> aracılığıyla bize ulaşın veya <a href="mailto:info@revenisis.com">info@revenisis.com</a> adresine e-posta gönderin.
+											</div>
+										</div>
+										<div class="mb-12 flex-1">
+											<img class="max-h-64 w-full object-cover lg:max-h-none mb-6 lg:mb-12" alt="Engineers analyzing blueprints and components, developing a cutting-edge robotics project in a technologically advanced workspace" src="https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/20230506_112754.jpg" data-landingsite-gallery-type="image" data-media="{&quot;id&quot;:&quot;2189337520&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+											<img class="max-h-64 w-full object-cover lg:max-h-none" src="https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/polyurethane.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						
+						<section class="relative bg-[var(--primary-color)] code-section" id="svv6hs">
+							<div class="container relative z-10 mx-auto px-6 py-12 lg:py-40 xl:px-12 2xl:px-36">
+								<div class="flex flex-col-reverse lg:flex-row lg:space-x-12">
+									<div class="flex flex-1 flex-col text-white lg:block">
+										<div class="mb-6 text-balance text-center text-5xl font-semibold [font-family:var(--font-family-heading)] lg:text-left">Kusursuz Hassasiyet: Gelişmiş Kalite Kontrol Çözümleri</div>
+										<div class="pb-12 text-center text-xl font-light lg:text-left"> Üreticiler, parçalarının tasarım amacına gerçekten uygun olduğunu doğrulamak istediklerinde, uzman kalite kontrolü için Revenisis'e başvururlar. Gelişmiş optik ve lazer tarama sistemlerimiz milyonlarca yüzey noktasını yakalayarak fiziksel bileşeninizin yüksek çözünürlüklü bir dijital ikizini oluşturur. Daha sonra bu taramayı orijinal CAD modelinizle hizalıyor ve toleransların tam olarak nerede aşıldığını size göstermek için mikrona kadar her geometrik sapmayı hesaplıyoruz. <br>
+											<br> Çıktılarımız arasında renk kodlu sapma haritaları, kapsamlı denetim raporları ve her bir sapmanın büyüklüğünü ve yerini belirleyen istatistiksel özetler bulunmaktadır. Bu bilgilerle işleme parametrelerini ayarlayabilir, takım stratejilerini optimize edebilir ve maliyetli yeniden işlemeleri ortadan kaldırabilirsiniz. Belirsizliği güvene dönüştürmek ve üretiminizin en yüksek verimlilikte çalışmasını sağlamak için Revenisis ile iş ortaklığı yapın. Parçalarınızı kontrol etmeye hazır mısınız? Başlamak için <a href="mailto:info@revenisis.com"> info@revenisis.com</a> adresinden bize ulaşın.
+										</div>
+										<a href="https://revenisis.com/iletişim" class="inline-block bg-[var(--light-background-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-center text-base font-semibold uppercase tracking-widest text-black hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]">BİZİMLE İLETİŞİME GEÇİN</a>
+									</div>
+									<div class="relative hidden max-h-[600px] flex-1 text-[var(--light-text-color)] lg:block">
+										<img class="aspect-square max-h-[600px] object-cover" alt="Floating smartphone mockup with blank white screen isolated on blue background. Digital mobile advertisement template. Realistic 3D phone with shadow, viewed from sideway angle." src="https://cdn.revenisis.com/images/engineering-manufacturing/engineering/quality-control.png" data-landingsite-gallery-type="image" data-media="{&quot;id&quot;:&quot;2202543640&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+										<div class="absolute bottom-0 left-0 z-[1] h-1/4 w-1/2 bg-[var(--dark-background-color)] pt-3">
+											<div class="flex h-full flex-col items-center justify-center bg-[var(--light-background-color)] text-center text-black">
+												<div class="text-3xl font-medium">Küresel Erişim</div>
+												<div class="text-2xl font-medium">Sınırsız Ölçeklenebilirlik</div>
+											</div>
+										</div>
+										<div class="absolute bottom-0 right-0 z-[1] w-1/2 bg-[var(--dark-background-color)] pl-3 pt-3">
+											<img class="aspect-square object-cover" src="https://cdn.revenisis.com/images/engineering-manufacturing/engineering/qualitycontrol.png" alt="Creativity and new ideas in business. Art collage." data-landingsite-gallery-type="image" data-media="{&quot;id&quot;:&quot;2132353979&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="relative code-section" id="sny326">
+							<div class="absolute inset-0 h-full w-full bg-cover bg-center object-cover brightness-[0.2] bg-[url(&quot;https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/18663689-1416-4714-f443-e97cb786be00/public&quot;)]" data-landingsite-gallery-type="image" aria-label="Engineer And Male Apprentice Measuring Components In Hi Tech Engineering Plant" data-media="{&quot;id&quot;:&quot;2203384595&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}"></div>
+							<div class="container relative z-10 mx-auto px-4 py-12 lg:py-32 xl:px-12 2xl:px-36">
+								<h3 class="pb-12 text-center text-3xl font-medium tracking-widest text-white [font-family:var(--font-family-heading)]"> MÜŞTERİLERİMİZ NE DİYOR</h3>
+								<div class="flex flex-col items-center justify-center space-y-12 lg:flex-row lg:space-x-6 lg:space-y-0">
+									<div class="max-w-96 relative flex flex-col items-center justify-center border border-white py-12 lg:w-1/2">
+										<div class="mb-8">
+											<i class="fa-solid fa-star fa-xl text-yellow-500" aria-hidden="true"></i>
+											<i class="fa-solid fa-star fa-xl text-yellow-500" aria-hidden="true"></i>
+											<i class="fa-solid fa-star fa-xl text-yellow-500" aria-hidden="true"></i>
+											<i class="fa-solid fa-star fa-xl text-yellow-500" aria-hidden="true"></i>
+											<i class="fa-solid fa-star fa-xl text-yellow-500" aria-hidden="true"></i>
+										</div>
+										<div class="mb-4 px-10 text-center text-2xl font-thin tracking-wide text-[var(--light-text-color)]">"Buradan yazılacaklar yaptıklarını anlatmaya yetmeyecektir. Siz derdinizi anlatın onlar çözsün." <br> -M.D.</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="relative code-section" id="szrlo4">
+							<div class="container relative z-10 mx-auto px-6 py-12 lg:py-40 xl:px-12 2xl:px-36">
+								<div class="flex flex-col lg:flex-row lg:space-x-12">
+									<div class="flex flex-1 flex-col text-[var(--dark-text-color)]">
+										<div class="mb-6 flex-none text-center text-5xl font-semibold [font-family:var(--font-family-heading)] lg:text-left">Fikrinizi Yüksek Doğruluklu Bir Ürüne Dönüştürelim</div>
+										<div class="flex-none pb-12 text-center text-xl font-light lg:text-left">Revenisis, ilk 3D taramalardan üretime hazır nihai bileşenlere kadar en zorlu teknik gereksinimlerinizi karşılayacak uzmanlık ve donanımı sunar. Ekibimizle iletişime geçin ve geliştirme yolculuğunuzu doğru ve verimli bir şekilde nasıl hızlandırabileceğimizi keşfedin.</div>
+										<div class="mb-12 flex-1">
+											<iframe class="h-full w-full" loading="lazy" src="https://maps.google.com/maps?q=revenisis&t=&z=9&ie=UTF8&iwloc=&output=embed" title="Google Maps Iframe" aria-label="Google Maps Iframe"></iframe>
+										</div>
+									</div>
+									<div class="relative flex-1 bg-[var(--primary-color)]">
+										<form class="space-y-6 p-8" id="consult-form-2" data-landingsite-contact-form="">
+											<div>
+												<input type="text" name="name" placeholder="İsminiz" class="mt-2 w-full rounded bg-[#ffffff] p-2 shadow-sm">
+											</div>
+											<div>
+												<input type="email" name="email" placeholder="E-posta adresiniz" class="mt-2 w-full rounded bg-[#ffffff] p-2 shadow-sm">
+											</div>
+											<div>
+												<input type="tel" name="phone" placeholder="İletişim numaranız" class="mt-2 w-full rounded bg-[#ffffff] p-2 shadow-sm">
+											</div>
+											<div>
+												<textarea name="message" rows="4" placeholder="Size nasıl yardımcı olabiliriz?" class="mt-2 w-full rounded bg-[#ffffff] p-2 shadow-sm"></textarea>
+											</div>
+											<div>
+												<button type="submit" class="w-full rounded-[var(--button-rounded-radius)] bg-[var(--secondary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-sm font-normal tracking-wider text-[var(--secondary-button-text-color)] hover:bg-[var(--secondary-button-hover-bg-color)] hover:text-[var(--secondar-button-hover-text-color)]">TALEBİNİZİ GÖNDERİN</button>
+												<p id="form-status-2" class="mt-2 text-center text-white"></p>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="frame-content">
+				<div class="[font-family:var(--font-family-body-2)]">
+					<div>
+						<footer class="bg-black code-section" id="global-footer">
+							<div class="container mx-auto px-6 py-24 xl:px-12 2xl:px-36">
+								<div class="grid grid-cols-1 pt-4 md:grid-cols-2 lg:grid-cols-3 lg:space-x-24">
+									<div class="mb-8">
+										<a href="/" class="mb-8 block text-3xl tracking-wider text-white [font-family:var(--font-family-heading)]" data-logo="">
+											<img src="https://cdn.revenisis.com/images/revenisis_logo-invert.png" alt="Revenisis Logo" class="h-30">
+										</a>
+										<p class="text-left font-light tracking-wider text-gray-100">Dünya çapında anahtar teslim üretim, prototipleme ve ürün geliştirme hizmetleri sunan bir mühendislik ve inovasyon şirketiyiz. Hassas üretim, Ar-Ge danışmanlığı ve karmaşık donanım projelerinin ölçeklendirilmesi konularında uzmanız. Ekibimiz startup'ları, KOBİ'leri ve endüstriyel müşterileri uçtan uca çözümlerle desteklemektedir.</p>
+										<div class="my-8 flex flex-row justify-center text-gray-400 md:justify-start">
+											<a href="https://www.linkedin.com/company/revenisis/?originalSubdomain=en" class="mr-3" aria-label="Visit our LinkedIn">
+												<div class="flex h-8 w-8 items-center justify-center rounded-full bg-white">
+													<i class="fa-brands fa-linkedin text-[var(--primary-color)]" aria-hidden="true"></i>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="mb-8">
+										<div class="mb-8 border-b-2 border-white pb-4 text-xl tracking-wide text-white">Bizimle iletişime geçin</div>
+										<div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+											<i class="fa-solid fa-phone mr-2 w-6 flex-none text-white" aria-hidden="true"></i>
+											<span id="footer-phone">+90 (505) 766-2939</span>
+										</div>
+										<div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+											<i class="fa-solid fa-envelope mr-2 w-6 flex-none text-white" aria-hidden="true"></i>
+											<span id="footer-email" class="w-[90%] break-words">info@revenisis.com</span>
+										</div>
+										<div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+											<i class="fa-solid fa-location-dot mr-2 w-6 flex-none text-white" aria-hidden="true"></i>
+											<span id="footer-address">Bakım Onarım 4. Sok., Zafer Mah., Yeni Sanayi Sitesi, No.: 17 <br>
+											Çorlu/TEKİRDAĞ <br>
+											59850</span>
+										</div>
+										<div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+											<i class="fa-solid fa-clock mr-2 w-6 flex-none text-white" aria-hidden="true"></i>
+											<span id="footer-hours">Gün içinde şu saatlerde müsaitiz: 9.00 - 18.00, Pzt-Cuma</span>
+										</div>
+									</div>
+								</div>
+								<p class="border-t-2 border-gray-600 py-4 text-left text-sm text-gray-500">© 2025 Revenisis, Tüm Hakları Saklıdır</p>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://revenisis.com/js/jquery-3.3.1.min.js"></script>
+		<script src="https://revenisis.com/js/jquery.sticky.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".js-sticky-header").sticky({
+					topSpacing: 0,
+					zIndex: 50
+				});
+				$("#mobile-menu-open").on("click", function(e) {
+					e.preventDefault();
+					$("#mobile-menu").toggleClass("translate-x-full translate-x-0");
+				});
+				$("#mobile-menu-close").on("click", function(e) {
+					e.preventDefault();
+					$("#mobile-menu").toggleClass("translate-x-0 translate-x-full");
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				document.querySelectorAll('#mobile-menu .arrow-collapse').forEach(function(btn) {
+					btn.addEventListener('click', function(e) {
+						e.preventDefault();
+						const submenu = btn.closest('li').querySelector('ul');
+						if (!submenu) return;
+						submenu.classList.toggle('hidden');
+						const icon = btn.querySelector('i');
+						if (icon) icon.classList.toggle('rotate-180');
+					});
+				});
+			});
+		</script>
+		<script>
+			const form_2 = document.getElementById('consult-form-2');
+			const status_2 = document.getElementById('form-status-2');
+
+			form_2.addEventListener('submit', async e => {
+				e.preventDefault();
+				const payload = {
+				name:    form_2.name.value,
+				email:   form_2.email.value,
+				phone:   form_2.phone.value,
+				message: form_2.message.value
+				};
+
+				try {
+					const pageLang = document.documentElement.lang || 'tr';
+					const res = await fetch(`https://form.revenisis.com/api/contact?lang=${pageLang}`, {
+						method: 'POST',
+						headers: { 'Content-Type':'application/json' },
+						body: JSON.stringify(payload)
+					});
+					const json = await res.json();
+					if (!res.ok) throw json.error || 'Server error';
+					status_2.textContent = json.message;
+					status_2.classList.remove('text-red-400');
+					status_2.classList.add('text-green-400');
+					form_2.reset();
+					} catch(err) {
+					status_2.textContent = err;
+					status_2.classList.remove('text-green-400');
+					status_2.classList.add('text-red-400');
+				}
+			});
+		</script>
+	</body>
+</html>

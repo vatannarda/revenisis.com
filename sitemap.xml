@@ -1,0 +1,46 @@
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>https://revenisis.com</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://revenisis.com/en"/>
+		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de"/>
+		<lastmod>2025-07-02</lastmod>
+		<priority>1.00</priority>
+	</url>
+	<url>
+		<loc>https://revenisis.com/hakkımızda</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://revenisis.com/en/about"/>
+		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de/überuns"/>
+		<lastmod>2025-07-02</lastmod>
+		<priority>0.40</priority>
+	</url>
+	<url>
+		<loc>https://revenisis.com/mühendislik</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://revenisis.com/en/engineering"/>
+		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de/ingenieurwesen"/>
+		<lastmod>2025-07-02</lastmod>
+		<priority>0.90</priority>
+	</url>
+	<url>
+		<loc>https://revenisis.com/üretim</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://revenisis.com/en/manufacturing"/>
+		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de/herstellung"/>
+		<lastmod>2025-07-02</lastmod>
+		<priority>0.90</priority>
+	</url>
+	<url>
+		<loc>https://revenisis.com/referanslarımız</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://revenisis.com/en/references"/>
+		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de/referenzen"/>
+		<lastmod>2025-07-02</lastmod>
+		<priority>0.50</priority>
+	</url>
+	<url>
+		<loc>https://revenisis.com/iletişim</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://revenisis.com/en/contact"/>
+		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de/kontakt"/>
+		<lastmod>2025-07-02</lastmod>
+		<priority>0.80</priority>
+	</url>
+</urlset>

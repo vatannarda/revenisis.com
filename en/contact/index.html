@@ -1,0 +1,374 @@
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="https://cdn.revenisis.com/images/RevR.png">
+		<link rel="apple-touch-icon" type="image/png" href="https://cdn.revenisis.com/images/RevR.png">
+		<title>Contact Us | Revenisis</title>
+		
+		<link rel="preload" href="https://revenisis.com/fonts/SuisseIntl.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="https://revenisis.com/fonts/SuisseIntl.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="https://revenisis.com/fonts/HaasGrotDisp-65Medium.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="https://revenisis.com/fonts/HaasGrotDisp-65Medium.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="https://revenisis.com/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="https://revenisis.com/fonts/Inter-Regular.woff" as="font" type="font/woff2" crossorigin>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
+		<style media="all" id="fa-kit-upload"></style>
+		<style>
+			:root {
+				--accent-color: #ff8a3b;
+				--accent2-color: #ffb74d;
+				--accent3-color: #6e68a5;
+				--accent4-color: #22b599;
+				--primary-color: #0b0c1a;
+				--dark-text-color: #000000;
+				--gray-text-color: #828282;
+				--button-padding-x: 16px;
+				--button-padding-y: 12px;
+				--font-family-body: 'Suisse Intl';
+				--font-family-body-2: 'Inter';
+				--light-text-color: #e2e6ea;
+				--light-text-color-2: #d5e1f0;
+				--dark-border-color: #1f1f26;
+				--light-border-color: #bbd1ec;
+				--font-family-heading: 'Neue Haas Grotesk';
+				--button-rounded-radius: 4px;
+				--dark-background-color: #0b0c1a;
+				--light-background-color: #e8eef5;
+				--medium-background-color: #d5e1f0;
+				--primary-button-bg-color: #0b0c1a;
+				--primary-button-text-color: #ffffff;
+				--secondary-button-bg-color: #e2e6ea;
+				--secondary-button-text-color: #0b0c1a;
+				--primary-button-hover-bg-color: #3ba9ff;
+				--primary-button-hover-text-color: #e2e6ea;
+				--secondary-button-hover-bg-color: #b2bcc5;
+				--secondary-button-hover-text-color: #0b0c1a;
+			}
+
+			@font-face {
+				font-family: 'Neue Haas Grotesk';
+				src: url('https://revenisis.com/fonts/HaasGrotDisp-65Medium.woff2') format('woff2'),
+					url('https://revenisis.com/fonts/HaasGrotDisp-65Medium.woff') format('woff');
+				font-weight: bold;
+				font-style: normal;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: 'Suisse Intl';
+				src: url('https://revenisis.com/fonts/SuisseIntl.woff2') format('woff2'),
+					url('https://revenisis.com/fonts/SuisseIntl.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: 'Inter';
+				src: url('https://revenisis.com/fonts/Inter-Regular.woff2') format('woff2'),
+					url('https://revenisis.com/fonts/Inter-Regular.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+				font-display: swap;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="frame-root">
+			<div class="frame-content bg-black">
+				<div class="[font-family:var(--font-family-body-2)]">
+					<!-- Mobile Menu (off-canvas) -->
+					<div id="mobile-menu" class="fixed top-0 right-0 z-50 w-72 h-screen bg-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+						<div class="flex justify-end p-4">
+							<button id="mobile-menu-close" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+								<i class="fa-solid fa-chevron-down text-2xl"></i>
+							</button>
+						</div>
+						<div class="overflow-y-auto h-[calc(100vh-64px)] p-4">
+							<ul class="site-nav-wrap space-y-1">
+								<li>
+									<a href="https://revenisis.com/en/about" class="block px-4 py-2 rounded hover:bg-gray-100">About</a>
+								</li>
+								<li>
+									<a href="https://revenisis.com/en/engineering" class="block px-4 py-2 rounded hover:bg-gray-100">Engineering</a>
+								</li>
+								<li>
+									<a href="https://revenisis.com/en/manufacturing" class="block px-4 py-2 rounded hover:bg-gray-100">Manufacturing</a>
+								</li>
+								<li>
+									<a href="https://revenisis.com/en/references" class="block px-4 py-2 rounded hover:bg-gray-100">References</a>
+								</li>
+								<li>
+									<a href="https://revenisis.com/en/contact" class="block px-4 py-2 rounded bg-gray-100">Contact</a>
+								</li>
+								<li class="mt-4 border-t pt-4">
+									<div class="flex justify-around">
+										<a href="https://revenisis.com/iletişim" class="px-2 py-1 text-gray-700 hover:font-semibold">TR</a>
+										<a href="https://revenisis.com/en/contact" class="px-2 py-1 text-gray-700 font-semibold">EN</a>
+										<a href="https://revenisis.com/de/kontakt" class="px-2 py-1 text-gray-700 hover:font-semibold">DE</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<header class="sticky top-0 inset-x-0 z-40">
+						<!-- Top Bar -->
+						<div class="border-b border-white/40 bg-transparent text-white text-sm">
+							<div class="container mx-auto px-4 py-3 flex flex-col lg:flex-row items-center lg:justify-between">
+								<div class="flex space-x-6 mb-2 lg:mb-0">
+									<a href="mailto:info@revenisis.com" class="flex items-center space-x-2">
+										<i class="fa-solid fa-envelope"></i>
+										<span class="inline">info@revenisis.com</span>
+									</a>
+									<div class="flex items-center space-x-2">
+										<i class="fa-solid fa-phone"></i>
+										<span class="inline">+90 505 766 2939</span>
+									</div>
+								</div>
+								<div class="flex space-x-4">
+									<a href="https://www.linkedin.com/company/revenisis/?originalSubdomain=en" class="p-1 sm:p-2">
+										<i class="fa-brands fa-linkedin"></i>
+									</a>
+									<a href="https://www.linkedin.com/in/suray-vatan-b3672711/" class="p-1 sm:p-2">
+										<i class="fa-brands fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- Main Navbar -->
+						<div id="main-navbar" class="js-sticky-header transition-colors duration-300 ease-in-out bg-black">
+							<div class="container mx-auto px-4 py-4 flex items-center justify-between max-w-auto lg:max-w-screen-xl xl:max-w-auto">
+								<!-- Logo -->
+								<div class="flex-shrink-0">
+									<a href="https://revenisis.com/en/"><img src="https://cdn.revenisis.com/images/rev-logo-temiz.png" alt="Revenisis: Engineering Solutions" class="h-12" /></a>
+								</div>
+								<!-- Desktop Menu -->
+								<nav class="hidden lg:flex space-x-8 items-center text-white">
+									<a href="https://revenisis.com/en/about" class="relative py-2 px-3 text-white/60 hover:text-white font-medium"> About </a>
+									<a href="https://revenisis.com/en/engineering" class="py-2 px-3 text-white/60 hover:text-white font-medium"> Engineering </a>
+									<a href="https://revenisis.com/en/manufacturing" class="py-2 px-3 text-white/60 hover:text-white font-medium"> Manufacturing </a>
+									<a href="https://revenisis.com/en/references" class="py-2 px-3 text-white/60 hover:text-white font-medium">References</a>
+									<a href="https://revenisis.com/en/contact" class="py-2 px-3 text-white font-medium">Contact</a>
+									<div class="flex items-center space-x-2">
+										<a href="https://revenisis.com/iletişim" class="text-white/60 hover:text-white font-medium">TR</a>
+										<span class="text-white/40">|</span>
+										<a href="https://revenisis.com/en/contact" class="text-white font-medium">EN</a>
+										<span class="text-white/40">|</span>
+										<a href="https://revenisis.com/de/kontakt" class="text-white/60 hover:text-white font-medium">DE</a>
+									</div>
+								</nav>
+								<!-- Mobile Toggle -->
+								<button id="mobile-menu-open" class="lg:hidden text-white p-2 focus:outline-none js-menu-toggle">
+									<i class="fa-solid fa-bars text-2xl"></i>
+								</button>
+							</div>
+						</div>
+					</header>
+				</div>
+			</div>
+			<div class="frame-content bg-black">
+				<div class="[font-family:var(--font-family-body-2)]">
+					<div>
+						<section class="relative py-12 lg:py-32">
+							<div class="absolute inset-0 z-10 hidden w-3/5 bg-gradient-to-b from-black to-transparent lg:block"></div>
+							
+							<div
+								class="absolute inset-0 bg-[url('https://cdn.revenisis.com/images/abstract-car-2.jpg')]
+									bg-cover bg-center"
+							></div>
+
+							<div class="absolute inset-0 bg-black/60"></div>
+
+							<div class="relative z-10 max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+								<div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-2xl space-y-6">
+									<h3 class="text-2xl font-semibold text-white [font-family:var(--font-family-heading)]">Our Location</h3>
+									<iframe
+										src="https://maps.google.com/maps?q=revenisis&t=&z=9&ie=UTF8&iwloc=&output=embed"
+										class="w-full h-64 rounded-lg border-0"
+										allowfullscreen=""
+										loading="lazy"
+									></iframe>
+									<div class="space-y-3 text-white">
+										<p class="flex items-start">
+											<i class="fa-solid fa-map-marker-alt mr-3 text-[var(--light-text-color-2)]"></i>
+											Bakım Onarım 4. Sok., Zafer Mah., Yeni Sanayi Sitesi, No.: 17 <br>
+											Çorlu/TEKİRDAĞ <br>
+											59850
+										</p>
+										<p class="flex items-start">
+											<i class="fa-solid fa-phone mr-3 text-[var(--light-text-color-2)]"></i>
+											+90 (505) 766-2939
+										</p>
+										<p class="flex items-start">
+											<i class="fa-solid fa-envelope mr-3 text-[var(--light-text-color-2)]"></i>
+											info@revenisis.com
+										</p>
+									</div>
+								</div>
+								<div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-2xl">
+									<h3 class="text-2xl font-semibold text-white [font-family:var(--font-family-heading)]">Get in Touch</h3>
+									<form id="consult-form" class="mt-6 space-y-5 [font-family:var(--font-family-body)">
+										<input
+											name="name"
+											type="text"
+											placeholder="Your Name"
+											class="w-full bg-white/20 backdrop-blur-sm border border-white/30
+													rounded-lg px-4 py-2 text-white placeholder-gray-200
+													focus:outline-none focus:ring-2 focus:ring-[var(--light-text-color-2)]"
+										/>
+										<input
+											name="email"
+											type="email"
+											placeholder="Your Email"
+											class="w-full bg-white/20 backdrop-blur-sm border border-white/30
+													rounded-lg px-4 py-2 text-white placeholder-gray-200
+													focus:outline-none focus:ring-2 focus:ring-[var(--light-text-color-2)]"
+										/>
+										<input type="tel" name="phone" placeholder="Your Phone"
+											class="w-full bg-white/20 backdrop-blur-sm border border-white/30
+													rounded-lg px-4 py-2 text-white placeholder-gray-200
+													focus:outline-none focus:ring-2 focus:ring-[var(--light-text-color-2)]"
+										/>
+										<textarea
+											name="message"
+											rows="6"
+											placeholder="Your Message"
+											class="w-full bg-white/20 backdrop-blur-sm border border-white/30
+													rounded-lg px-4 py-2 text-white placeholder-gray-200
+													focus:outline-none focus:ring-2 focus:ring-[var(--light-text-color-2)]"
+										></textarea>
+										<div>
+											<button
+												type="submit"
+												class="w-full text-white border border-[var(--light-text-color-2)]
+														rounded-lg px-4 py-3 hover:bg-[var(--light-text-color-2)]	
+														transition"
+												>
+												Send Message
+											</button>
+											<p id="form-status" class="mt-2 text-center text-white"></p>
+										</div>
+									</form>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="frame-content">
+				<div class="[font-family:var(--font-family-body-2)]">
+					<div>
+						<footer class="bg-black code-section" id="global-footer">
+							<div class="container mx-auto px-6 py-24 xl:px-12 2xl:px-36">
+								<div class="grid grid-cols-1 pt-4 md:grid-cols-2 lg:grid-cols-3 lg:space-x-24">
+									<div class="mb-8">
+										<a href="/" class="mb-8 block text-3xl tracking-wider text-white [font-family:var(--font-family-heading)]" data-logo="">
+											<img src="https://cdn.revenisis.com/images/revenisis_logo-invert.png" alt="Revenisis Logo" class="h-30">
+										</a>
+										<p class="text-left font-light tracking-wider text-gray-100">We are an engineering and innovation company providing turnkey manufacturing, prototyping, and product development services globally. We specialize in precision manufacturing, R&amp;D consulting, and scaling complex hardware projects. Our team supports startups, SMEs, and industrial clients with end-to-end solutions.</p>
+										<div class="my-8 flex flex-row justify-center text-gray-400 md:justify-start">
+											<a href="https://www.linkedin.com/company/revenisis/?originalSubdomain=en" class="mr-3" aria-label="Visit our LinkedIn">
+												<div class="flex h-8 w-8 items-center justify-center rounded-full bg-white">
+													<i class="fa-brands fa-linkedin text-[var(--primary-color)]" aria-hidden="true"></i>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="mb-8">
+										<div class="mb-8 border-b-2 border-white pb-4 text-xl tracking-wide text-white">Contact Us</div>
+										<div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+											<i class="fa-solid fa-phone mr-2 w-6 flex-none text-white" aria-hidden="true"></i>
+											<span id="footer-phone">+90 (505) 766-2939</span>
+										</div>
+										<div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+											<i class="fa-solid fa-envelope mr-2 w-6 flex-none text-white" aria-hidden="true"></i>
+											<span id="footer-email" class="w-[90%] break-words">info@revenisis.com</span>
+										</div>
+										<div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+											<i class="fa-solid fa-location-dot mr-2 w-6 flex-none text-white" aria-hidden="true"></i>
+											<span id="footer-address">Bakım Onarım 4. Sok., Zafer Mah., Yeni Sanayi Sitesi, No.: 17 <br>
+											Çorlu/TEKİRDAĞ <br>
+											59850</span>
+										</div>
+										<div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+											<i class="fa-solid fa-clock mr-2 w-6 flex-none text-white" aria-hidden="true"></i>
+											<span id="footer-hours">Available Daily: 9am - 6pm, Mon-Fri</span>
+										</div>
+									</div>
+								</div>
+								<p class="border-t-2 border-gray-600 py-4 text-left text-sm text-gray-500">© 2025 Revenisis, All Rights Reserved</p>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://revenisis.com/js/jquery-3.3.1.min.js"></script>
+		<script src="https://revenisis.com/js/jquery.sticky.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".js-sticky-header").sticky({
+					topSpacing: 0,
+					zIndex: 50
+				});
+				$("#mobile-menu-open").on("click", function(e) {
+					e.preventDefault();
+					$("#mobile-menu").toggleClass("translate-x-full translate-x-0");
+				});
+				$("#mobile-menu-close").on("click", function(e) {
+					e.preventDefault();
+					$("#mobile-menu").toggleClass("translate-x-0 translate-x-full");
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				document.querySelectorAll('#mobile-menu .arrow-collapse').forEach(function(btn) {
+					btn.addEventListener('click', function(e) {
+						e.preventDefault();
+						const submenu = btn.closest('li').querySelector('ul');
+						if (!submenu) return;
+						submenu.classList.toggle('hidden');
+						const icon = btn.querySelector('i');
+						if (icon) icon.classList.toggle('rotate-180');
+					});
+				});
+			});
+		</script>
+		<script>
+			const form = document.getElementById('consult-form');
+			const status = document.getElementById('form-status');
+
+			form.addEventListener('submit', async e => {
+				e.preventDefault();
+				const payload = {
+				name:    form.name.value,
+				email:   form.email.value,
+				phone:   form.phone.value,
+				message: form.message.value
+				};
+
+				try {
+				const pageLang = document.documentElement.lang || 'tr';
+				const res = await fetch(`https://form.revenisis.com/api/contact?lang=${pageLang}`, {
+					method: 'POST',
+					headers: { 'Content-Type':'application/json' },
+					body: JSON.stringify(payload)
+				});
+				const json = await res.json();
+				if (!res.ok) throw json.error || 'Server error';
+				status.textContent = json.message;
+				status.classList.remove('text-red-400');
+				status.classList.add('text-green-400');
+				form.reset();
+				} catch(err) {
+				status.textContent = err;
+				status.classList.remove('text-green-400');
+				status.classList.add('text-red-400');
+				}
+			});
+		</script>
+	</body>
+</html>
