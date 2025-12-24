@@ -1,0 +1,329 @@
+<html class="h-full" lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn.revenisis.com/images/RevR.png">
+    <link rel="apple-touch-icon" type="image/png" href="https://cdn.revenisis.com/images/RevR.png">
+    <title>Über uns | Revenisis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
+    <style media="all" id="fa-kit-upload"></style>
+    <style>
+        :root {
+            --accent-color: #ff8a3b;
+            --accent2-color: #ffb74d;
+            --accent3-color: #6e68a5;
+            --accent4-color: #22b599;
+            --primary-color: #0b0c1a;
+            --dark-text-color: #000000;
+            --gray-text-color: #828282;
+            --button-padding-x: 16px;
+            --button-padding-y: 12px;
+            --font-family-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-family-body-2: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --light-text-color: #e2e6ea;
+            --light-text-color-2: #d5e1f0;
+            --dark-border-color: #1f1f26;
+            --light-border-color: #bbd1ec;
+            --font-family-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --button-rounded-radius: 4px;
+            --dark-background-color: #0b0c1a;
+            --light-background-color: #e8eef5;
+            --medium-background-color: #d5e1f0;
+            --primary-button-bg-color: #0b0c1a;
+            --primary-button-text-color: #ffffff;
+            --secondary-button-bg-color: #e2e6ea;
+            --secondary-button-text-color: #0b0c1a;
+            --primary-button-hover-bg-color: #3ba9ff;
+            --primary-button-hover-text-color: #e2e6ea;
+            --secondary-button-hover-bg-color: #b2bcc5;
+            --secondary-button-hover-text-color: #0b0c1a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame-root">
+        <div class="frame-content bg-black">
+            <div class="[font-family:var(--font-family-body-2)]">
+                <!-- Mobile Menu (off-canvas) -->
+                <div id="mobile-menu"
+                    class="fixed top-0 right-0 z-50 w-72 h-screen bg-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+                    <div class="flex justify-end p-4">
+                        <button id="mobile-menu-close" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                            <i class="fa-solid fa-chevron-down text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="overflow-y-auto h-[calc(100vh-64px)] p-4">
+                        <ul class="site-nav-wrap space-y-1">
+                            <li>
+                                <a href="https://revenisis.com/de/ueber-uns"
+                                    class="block px-4 py-2 rounded bg-gray-100">Über uns</a>
+                            </li>
+                            <li>
+                                <a href="https://revenisis.com/de/ingenieurwesen"
+                                    class="block px-4 py-2 rounded hover:bg-gray-100">Ingenieurwesen</a>
+                            </li>
+                            <li>
+                                <a href="https://revenisis.com/de/fertigung"
+                                    class="block px-4 py-2 rounded hover:bg-gray-100">Fertigung</a>
+                            </li>
+                            <li>
+                                <a href="https://revenisis.com/de/referenzen"
+                                    class="block px-4 py-2 rounded hover:bg-gray-100">Referenzen</a>
+                            </li>
+                            <li>
+                                <a href="https://revenisis.com/de/kontakt"
+                                    class="block px-4 py-2 rounded hover:bg-gray-100">Kontakt</a>
+                            </li>
+                            <li class="mt-4 border-t pt-4">
+                                <div class="flex justify-around">
+                                    <a href="https://revenisis.com/hakkımızda"
+                                        class="px-2 py-1 text-gray-700 hover:font-semibold">TR</a>
+                                    <a href="https://revenisis.com/en/about"
+                                        class="px-2 py-1 text-gray-700 hover:font-semibold">EN</a>
+                                    <a href="https://revenisis.com/de/ueber-uns"
+                                        class="px-2 py-1 text-gray-700 font-semibold">DE</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <header class="sticky top-0 inset-x-0 z-40">
+                    <!-- Top Bar -->
+                    <div class="border-b border-white/40 bg-transparent text-white text-sm">
+                        <div
+                            class="container mx-auto px-4 py-3 flex flex-col lg:flex-row items-center lg:justify-between">
+                            <div class="flex space-x-6 mb-2 lg:mb-0">
+                                <a href="mailto:info@revenisis.com" class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span class="inline">info@revenisis.com</span>
+                                </a>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span class="inline">+90 505 766 2939</span>
+                                </div>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/company/revenisis/?originalSubdomain=en"
+                                    class="p-1 sm:p-2">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/suray-vatan-b3672711/" class="p-1 sm:p-2">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Navbar -->
+                    <div id="main-navbar" class="js-sticky-header transition-colors duration-300 ease-in-out bg-black">
+                        <div
+                            class="container mx-auto px-4 py-4 flex items-center justify-between max-w-auto lg:max-w-screen-xl xl:max-w-auto">
+                            <!-- Logo -->
+                            <div class="flex-shrink-0">
+                                <a href="https://revenisis.com/de/"><img
+                                        src="https://cdn.revenisis.com/images/rev-logo-temiz.png"
+                                        alt="Revenisis: Ingenieurtechnische Lösungen" class="h-12" /></a>
+                            </div>
+                            <!-- Desktop Menu -->
+                            <nav class="hidden lg:flex space-x-8 items-center text-white">
+                                <a href="https://revenisis.com/de/ueber-uns"
+                                    class="relative py-2 px-3 text-white font-medium"> Über uns </a>
+                                <a href="https://revenisis.com/de/ingenieurwesen"
+                                    class="py-2 px-3 text-white/60 hover:text-white font-medium"> Ingenieurwesen </a>
+                                <a href="https://revenisis.com/de/fertigung"
+                                    class="py-2 px-3 text-white/60 hover:text-white font-medium"> Fertigung </a>
+                                <a href="https://revenisis.com/de/referenzen"
+                                    class="py-2 px-3 text-white/60 hover:text-white font-medium">Referenzen</a>
+                                <a href="https://revenisis.com/de/kontakt"
+                                    class="py-2 px-3 text-white/60 hover:text-white font-medium">Kontakt</a>
+                                <div class="flex items-center space-x-2">
+                                    <a href="https://revenisis.com/hakkımızda"
+                                        class="text-white/60 hover:text-white font-medium">TR</a>
+                                    <span class="text-white/40">|</span>
+                                    <a href="https://revenisis.com/en/about"
+                                        class="text-white/60 hover:text-white font-medium">EN</a>
+                                    <span class="text-white/40">|</span>
+                                    <a href="https://revenisis.com/de/ueber-uns" class="text-white font-medium">DE</a>
+                                </div>
+                            </nav>
+                            <!-- Mobile Toggle -->
+                            <button id="mobile-menu-open"
+                                class="lg:hidden text-white p-2 focus:outline-none js-menu-toggle">
+                                <i class="fa-solid fa-bars text-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="frame-content bg-black">
+            <div class="[font-family:var(--font-family-body)]">
+                <div>
+                    <section class="overflow-hidden code-section" id="s0nyfzw">
+                        <div class="relative py-12 lg:py-24">
+                            <!-- Hintergrund -->
+                            <div
+                                class="absolute inset-0 bg-[url('https://cdn.revenisis.com/images/rev-logo-transparent.png')] bg-contain bg-center bg-no-repeat [background-size:50%] hidden lg:block">
+                            </div>
+                            <!-- Über uns -->
+                            <div class="relative z-10 max-w-7xl mx-auto px-6 space-y-6">
+                                <h2 class="text-4xl [font-family:var(--font-family-heading)] text-white">Über uns</h2>
+                                <div class="space-y-4 text-gray-200">
+                                    <p>
+                                        <strong class="text-white">Gegründet im Jahr 2012</strong> mit dem Ziel, auf
+                                        Hochtechnologie basierende Lösungen und Dienstleistungen zu entwickeln, bietet
+                                        die <strong class="text-white">Revenisis Müh. Çöz. ve İmal. San. Tic. Ltd.
+                                            Şti.</strong> hochwertige Dienstleistungen in verschiedenen
+                                        Industriebereichen – vorrangig für die türkische Industrie sowie kreative
+                                        Unternehmen weltweit.
+                                    </p>
+                                    <p>
+                                        <strong class="text-white">Das Lösungs- und Serviceportfolio von
+                                            Revenisis</strong> umfasst ein breites Spektrum an
+                                        Produktentwicklungstechnologien und Beratungsleistungen, darunter
+                                        Industriedesign, Engineering, 3D-Druck, Reverse Engineering, CAD/CAM und mehr.
+                                    </p>
+                                    <p>Revenisis strebt danach, seinen Kunden modernste Technologieprodukte und
+                                        -lösungen für effizientere Geschäftsprozesse bereitzustellen, während wir
+                                        gleichzeitig nachhaltiges Wachstum, Fortschritt und Innovation anstreben, um
+                                        dauerhaften Mehrwert für unsere Stakeholder, Kunden und die türkische
+                                        Gesellschaft zu schaffen.</p>
+                                </div>
+                            </div>
+                            <!-- Mission & Vision -->
+                            <div
+                                class="relative z-10 max-w-7xl mx-auto px-6 mt-16 grid grid-cols-1 md:grid-cols-2 gap-16">
+                                <div>
+                                    <h3 class="text-3xl [font-family:var(--font-family-heading)] text-white">Unsere
+                                        Mission</h3>
+                                    <p class="mt-4 text-gray-200">
+                                        <strong class="text-white">Die Mission von Revenisis</strong> ist es, unter
+                                        Nutzung modernster Hochtechnologie und dem erforderlichen Engineering-Ansatz
+                                        innerhalb kürzester Zeit die beste Ingenieurdienstleistung zu erbringen, die
+                                        Zufriedenheit unserer Kunden zu gewährleisten, ihre Wettbewerbsfähigkeit zu
+                                        erhalten und der beste Lösungspartner zu sein.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 class="text-3xl [font-family:var(--font-family-heading)] text-white">Unsere
+                                        Vision</h3>
+                                    <p class="mt-4 text-gray-200">
+                                        <strong class="text-white">Die Vision von Revenisis</strong> ist es, als eines
+                                        der führenden Unternehmen in der Ingenieurwelt einen Platz einzunehmen, indem
+                                        wir unseren Kunden die bestmögliche und effizienteste Technologie anbieten, um
+                                        zur Entwicklung unseres Landes beizutragen und es in die Reihen der
+                                        fortgeschrittenen Industrienationen zu führen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="frame-content">
+            <div class="[font-family:var(--font-family-body-2)]">
+                <div>
+                    <footer class="bg-black code-section" id="global-footer">
+                        <div class="container mx-auto px-6 py-24 xl:px-12 2xl:px-36">
+                            <div class="grid grid-cols-1 pt-4 md:grid-cols-2 lg:grid-cols-3 lg:space-x-24">
+                                <div class="mb-8">
+                                    <a href="/de/"
+                                        class="mb-8 block text-3xl tracking-wider text-white [font-family:var(--font-family-heading)]"
+                                        data-logo="">
+                                        <img src="https://cdn.revenisis.com/images/revenisis_logo-invert.png"
+                                            alt="Revenisis Logo" class="h-30">
+                                    </a>
+                                    <p class="text-left font-light tracking-wider text-gray-100">Wir sind ein Ingenieur-
+                                        und Innovationsunternehmen, das weltweit schlüsselfertige Fertigung, Prototyping
+                                        und Produktentwicklung anbietet. Wir sind spezialisiert auf Präzisionsfertigung,
+                                        F&E-Beratung und die Skalierung komplexer Hardwareprojekte. Unser Team
+                                        unterstützt Start-ups, KMU und Industriekunden mit End-to-End-Lösungen.</p>
+                                    <div class="my-8 flex flex-row justify-center text-gray-400 md:justify-start">
+                                        <a href="https://www.linkedin.com/company/revenisis/?originalSubdomain=en"
+                                            class="mr-3" aria-label="Besuchen Sie unser LinkedIn">
+                                            <div class="flex h-8 w-8 items-center justify-center rounded-full bg-white">
+                                                <i class="fa-brands fa-linkedin text-[var(--primary-color)]"
+                                                    aria-hidden="true"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mb-8">
+                                    <div class="mb-8 border-b-2 border-white pb-4 text-xl tracking-wide text-white">
+                                        Kontaktieren Sie uns</div>
+                                    <div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+                                        <i class="fa-solid fa-phone mr-2 w-6 flex-none text-white"
+                                            aria-hidden="true"></i>
+                                        <span id="footer-phone">+90 (505) 766-2939</span>
+                                    </div>
+                                    <div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+                                        <i class="fa-solid fa-envelope mr-2 w-6 flex-none text-white"
+                                            aria-hidden="true"></i>
+                                        <span id="footer-email" class="w-[90%] break-words">info@revenisis.com</span>
+                                    </div>
+                                    <div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+                                        <i class="fa-solid fa-location-dot mr-2 w-6 flex-none text-white"
+                                            aria-hidden="true"></i>
+                                        <span id="footer-address">Bakım Onarım 4. Sok., Zafer Mah., Yeni Sanayi Sitesi,
+                                            No.: 17 <br>
+                                            Çorlu/TEKİRDAĞ <br>
+                                            59850</span>
+                                    </div>
+                                    <div class="mb-2 flex items-center flex-row font-light tracking-wider text-white">
+                                        <i class="fa-solid fa-clock mr-2 w-6 flex-none text-white"
+                                            aria-hidden="true"></i>
+                                        <span id="footer-hours">Täglich erreichbar: 9:00 - 18:00 Uhr, Mo-Fr</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="border-t-2 border-gray-600 py-4 text-left text-sm text-gray-500">© 2025 Revenisis,
+                                Alle Rechte vorbehalten</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://revenisis.com/js/jquery-3.3.1.min.js"></script>
+    <script src="https://revenisis.com/js/jquery.sticky.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".js-sticky-header").sticky({
+                topSpacing: 0,
+                zIndex: 50
+            });
+            $("#mobile-menu-open").on("click", function (e) {
+                e.preventDefault();
+                $("#mobile-menu").toggleClass("translate-x-full translate-x-0");
+            });
+            $("#mobile-menu-close").on("click", function (e) {
+                e.preventDefault();
+                $("#mobile-menu").toggleClass("translate-x-0 translate-x-full");
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('#mobile-menu .arrow-collapse').forEach(function (btn) {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const submenu = btn.closest('li').querySelector('ul');
+                    if (!submenu) return;
+                    submenu.classList.toggle('hidden');
+                    const icon = btn.querySelector('i');
+                    if (icon) icon.classList.toggle('rotate-180');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

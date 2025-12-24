@@ -11,7 +11,7 @@
 	<url>
 		<loc>https://revenisis.com/hakkımızda</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://revenisis.com/en/about"/>
-		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de/überuns"/>
+		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de/ueber-uns"/>
 		<lastmod>2025-07-02</lastmod>
 		<priority>0.40</priority>
 	</url>
@@ -25,7 +25,7 @@
 	<url>
 		<loc>https://revenisis.com/üretim</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://revenisis.com/en/manufacturing"/>
-		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de/herstellung"/>
+		<xhtml:link rel="alternate" hreflang="de" href="https://revenisis.com/de/fertigung"/>
 		<lastmod>2025-07-02</lastmod>
 		<priority>0.90</priority>
 	</url>

@@ -1,0 +1,504 @@
+<html class="h-full" lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="https://cdn.revenisis.com/images/RevR.png">
+	<link rel="apple-touch-icon" type="image/png" href="https://cdn.revenisis.com/images/RevR.png">
+	<title>Fertigung | Revenisis</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<link rel="preload" href="https://revenisis.com/fonts/SuisseIntl.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://revenisis.com/fonts/SuisseIntl.woff" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="https://revenisis.com/fonts/HaasGrotDisp-65Medium.woff2" as="font" type="font/woff2"
+		crossorigin>
+	<link rel="preload" href="https://revenisis.com/fonts/HaasGrotDisp-65Medium.woff" as="font" type="font/woff"
+		crossorigin>
+	<link rel="preload" href="https://revenisis.com/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://revenisis.com/fonts/Inter-Regular.woff" as="font" type="font/woff2" crossorigin>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/alpinejs" defer></script>
+	<style media="all" id="fa-kit-upload"></style>
+	<style>
+		:root {
+			--accent-color: #ff8a3b;
+			--accent2-color: #ffb74d;
+			--accent3-color: #6e68a5;
+			--accent4-color: #22b599;
+			--primary-color: #0b0c1a;
+			--dark-text-color: #000000;
+			--gray-text-color: #828282;
+			--button-padding-x: 16px;
+			--button-padding-y: 12px;
+			--font-family-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+			--font-family-body-2: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+			--light-text-color: #e2e6ea;
+			--light-text-color-2: #b8bcc4;
+			--dark-border-color: #1f1f26;
+			--light-border-color: #bbd1ec;
+			--font-family-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+			--button-rounded-radius: 4px;
+			--dark-background-color: #0b0c1a;
+			--light-background-color: #e8eef5;
+			--medium-background-color: #d5e1f0;
+			--primary-button-bg-color: #0b0c1a;
+			--primary-button-text-color: #ffffff;
+			--secondary-button-bg-color: #e2e6ea;
+			--secondary-button-text-color: #0b0c1a;
+			--primary-button-hover-bg-color: #3ba9ff;
+			--primary-button-hover-text-color: #e2e6ea;
+			--secondary-button-hover-bg-color: #b2bcc5;
+			--secondary-button-hover-text-color: #0b0c1a;
+		}
+
+		@font-face {
+			font-family: 'Neue Haas Grotesk';
+			src: url('https://revenisis.com/fonts/HaasGrotDisp-65Medium.woff2') format('woff2'),
+				url('https://revenisis.com/fonts/HaasGrotDisp-65Medium.woff') format('woff');
+			font-weight: bold;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Suisse Intl';
+			src: url('https://revenisis.com/fonts/SuisseIntl.woff2') format('woff2'),
+				url('https://revenisis.com/fonts/SuisseIntl.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Inter';
+			src: url('https://revenisis.com/fonts/Inter-Regular.woff2') format('woff2'),
+				url('https://revenisis.com/fonts/Inter-Regular.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="frame-root">
+		<div class="frame-content bg-black">
+			<div class="[font-family:var(--font-family-body-2)]">
+				<!-- Mobile Menu (off-canvas) -->
+				<div id="mobile-menu"
+					class="fixed top-0 right-0 z-50 w-72 h-screen bg-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+					<div class="flex justify-end p-4">
+						<button id="mobile-menu-close" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+							<i class="fa-solid fa-chevron-down text-2xl"></i>
+						</button>
+					</div>
+					<div class="overflow-y-auto h-[calc(100vh-64px)] p-4">
+						<ul class="site-nav-wrap space-y-1">
+							<li>
+								<a href="https://revenisis.com/de/ueber-uns"
+									class="block px-4 py-2 rounded hover:bg-gray-100">Über uns</a>
+							</li>
+							<li>
+								<a href="https://revenisis.com/de/ingenieurwesen"
+									class="block px-4 py-2 rounded hover:bg-gray-100">Ingenieurwesen</a>
+							</li>
+							<li>
+								<a href="https://revenisis.com/de/fertigung"
+									class="block px-4 py-2 rounded bg-gray-100">Fertigung</a>
+							</li>
+							<li>
+								<a href="https://revenisis.com/de/referenzen"
+									class="block px-4 py-2 rounded hover:bg-gray-100">Referenzen</a>
+							</li>
+							<li>
+								<a href="https://revenisis.com/de/kontakt"
+									class="block px-4 py-2 rounded hover:bg-gray-100">Kontakt</a>
+							</li>
+							<li class="mt-4 border-t pt-4">
+								<div class="flex justify-around">
+									<a href="https://revenisis.com/üretim"
+										class="px-2 py-1 text-gray-700 hover:font-semibold">TR</a>
+									<a href="https://revenisis.com/en/manufacturing"
+										class="px-2 py-1 text-gray-700 hover:font-semibold">EN</a>
+									<a href="https://revenisis.com/de/fertigung"
+										class="px-2 py-1 text-gray-700 font-semibold">DE</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<header class="sticky top-0 inset-x-0 z-40">
+					<!-- Top Bar -->
+					<div class="border-b border-white/40 bg-transparent text-white text-sm">
+						<div
+							class="container mx-auto px-4 py-3 flex flex-col lg:flex-row items-center lg:justify-between">
+							<div class="flex space-x-6 mb-2 lg:mb-0">
+								<a href="mailto:info@revenisis.com" class="flex items-center space-x-2">
+									<i class="fa-solid fa-envelope"></i>
+									<span class="inline">info@revenisis.com</span>
+								</a>
+								<div class="flex items-center space-x-2">
+									<i class="fa-solid fa-phone"></i>
+									<span class="inline">+90 505 766 2939</span>
+								</div>
+							</div>
+							<div class="flex space-x-4">
+								<a href="https://www.linkedin.com/company/revenisis/?originalSubdomain=en"
+									class="p-1 sm:p-2">
+									<i class="fa-brands fa-linkedin"></i>
+								</a>
+								<a href="https://www.linkedin.com/in/suray-vatan-b3672711/" class="p-1 sm:p-2">
+									<i class="fa-brands fa-linkedin"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Main Navbar -->
+					<div id="main-navbar" class="js-sticky-header transition-colors duration-300 ease-in-out bg-black">
+						<div
+							class="container mx-auto px-4 py-4 flex items-center justify-between max-w-auto lg:max-w-screen-xl xl:max-w-auto">
+							<!-- Logo -->
+							<div class="flex-shrink-0">
+								<a href="https://revenisis.com/de/">
+									<img src="https://cdn.revenisis.com/images/rev-logo-temiz.png"
+										alt="Revenisis: Ingenieurtechnische Lösungen" class="h-12" />
+								</a>
+							</div>
+							<!-- Desktop Menu -->
+							<nav class="hidden lg:flex space-x-8 items-center text-white">
+								<a href="https://revenisis.com/de/ueber-uns"
+									class="relative py-2 px-3 text-white/60 hover:text-white font-medium"> Über uns </a>
+								<a href="https://revenisis.com/de/ingenieurwesen"
+									class="py-2 px-3 text-white/60 hover:text-white font-medium"> Ingenieurwesen </a>
+								<a href="https://revenisis.com/de/fertigung" class="py-2 px-3 text-white font-medium">
+									Fertigung </a>
+								<a href="https://revenisis.com/de/referenzen"
+									class="py-2 px-3 text-white/60 hover:text-white font-medium">Referenzen</a>
+								<a href="https://revenisis.com/de/kontakt"
+									class="py-2 px-3 text-white/60 hover:text-white font-medium">Kontakt</a>
+								<div class="flex items-center space-x-2">
+									<a href="https://revenisis.com/üretim"
+										class="text-white/60 hover:text-white font-medium">TR</a>
+									<span class="text-white/40">|</span>
+									<a href="https://revenisis.com/en/manufacturing"
+										class="text-white/60 hover:text-white font-medium">EN</a>
+									<span class="text-white/40">|</span>
+									<a href="https://revenisis.com/de/fertigung" class="text-white font-medium">DE</a>
+								</div>
+							</nav>
+							<!-- Mobile Toggle -->
+							<button id="mobile-menu-open"
+								class="lg:hidden text-white p-2 focus:outline-none js-menu-toggle">
+								<i class="fa-solid fa-bars text-2xl"></i>
+							</button>
+						</div>
+					</div>
+				</header>
+			</div>
+		</div>
+		<div class="frame-content">
+			<div class="[font-family:var(--font-family-body)]">
+				<div>
+					<section class="relative overflow-hidden">
+						<!-- Arkaplan resmi -->
+						<div class="absolute inset-0 bg-cover bg-center"
+							style="background-image: url('https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/20220415_180522.jpg');"
+							aria-label="Purple laser lines scanning a mechanical component, enhancing precision in reverse engineering and quality control processes"
+							data-landingsite-gallery-type="image" data-seo-image=""
+							data-media='{"id":"2207212217","src":"iStock","type":"image"}'></div>
+						<!-- Gradient overlay (lg ve üstünde) -->
+						<div class="hidden lg:block absolute inset-0 w-3/5 bg-gradient-to-r from-black to-transparent">
+						</div>
+						<!-- İçerik -->
+						<div
+							class="relative z-10 flex items-center justify-center w-full px-4 py-16 md:justify-start md:pl-24 md:py-20 lg:py-32">
+							<div
+								class="max-w-md border-[20px] border-[var(--primary-color)] bg-white p-6 sm:p-8 lg:p-10 text-center lg:text-left">
+								<h3
+									class="text-base font-medium uppercase tracking-widest text-[var(--primary-color)] mb-2">
+									Entdecken Sie Revenisis Fertigung </h3>
+								<h1
+									class="text-3xl font-semibold text-[var(--dark-text-color)] border-b-8 border-[var(--primary-color)] mb-4 lg:text-5xl [font-family:var(--font-family-heading)]">
+									Fertigungsdienstleistungen </h1>
+								<p class="text-base font-normal tracking-wide text-[var(--gray-text-color)] mb-6"> Bei
+									Revenisis bauen unsere Fertigungskapazitäten darauf auf, Präzision, Flexibilität und
+									Skalierbarkeit für verschiedenste Material- und Prototyping-Anforderungen zu
+									liefern. Mit modernsten CNC-Systemen, additiven Fertigungstechnologien und
+									fortschrittlichen Gusstechniken unterstützen wir den Übergang vom Design zum
+									funktionalen Bauteil mit konsequenter Qualitätssicherung in jedem Schritt. </p>
+								<a href="https://revenisis.com/de/kontakt"
+									class="inline-block border border-[var(--dark-text-color)] bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-base font-semibold uppercase tracking-widest text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]">
+									Kontakt aufnehmen </a>
+							</div>
+						</div>
+					</section>
+					<section class="py-4 md:py-8 code-section" id="sc3nloe">
+						<div class="container mx-auto py-12 xl:px-12 2xl:px-36">
+							<div class="flex flex-col items-stretch lg:flex-row">
+								<div class="relative flex-1 p-10 lg:w-1/2">
+									<div
+										class="absolute bottom-0 right-0 z-0 h-4/5 w-4/5 bg-[var(--dark-background-color)]">
+									</div>
+									<img class="relative bottom-10 right-10 z-[1] aspect-square object-cover lg:absolute xl:relative xl:bottom-0 xl:right-0"
+										src="https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/metal-processing.jpeg"
+										data-landingsite-gallery-type="image"
+										alt="3D quality control and inspection scanning of vehicle part in the automotive industry"
+										data-media="{&quot;id&quot;:&quot;1447749455&quot;,&quot;src&quot;:&quot;iStock&quot;,&quot;type&quot;:&quot;image&quot;}">
+									<div
+										class="absolute bottom-0 right-0 z-[2] h-2/5 w-1/2 bg-[var(--light-text-color)] pl-3 pt-3">
+										<div
+											class="flex h-full w-full flex-col items-center justify-center bg-[var(--primary-color)] p-10 text-[var(--light-text-color)]">
+											<div class="mb-2 sm:text-2xl md:text-4xl lg:text-6xl font-bold">End-to-End
+												Lösungen</div>
+											<div>Umfassende Fertigungsdienstleistungen</div>
+										</div>
+									</div>
+								</div>
+								<div class="px-14 pt-10 lg:w-1/2">
+									<h3
+										class="pb-4 text-base font-medium uppercase tracking-widest text-[var(--primary-color)]">
+										Über Revenisis Fertigungsdienstleistungen</h3>
+									<h1
+										class="mb-6 border-b-8 border-[var(--primary-color)] text-2xl font-semibold text-[var(--dark-text-color)] [font-family:var(--font-family-heading)] sm:text-3xl md:text-4xl">
+										Vom Design zur Funktion</h1>
+									<p class="mb-4 text-base font-normal tracking-wide text-[var(--gray-text-color)]">
+										Bei Revenisis sind wir darauf spezialisiert, technische Entwürfe in präzise,
+										hochwertige Komponenten und Baugruppen zu verwandeln. Unsere
+										Fertigungskapazitäten decken ein breites Spektrum an Materialien und Verfahren
+										ab, sodass wir maßgeschneiderte Lösungen sowohl für Prototyping als auch für die
+										Serienproduktion liefern können.</p>
+									<p class="mb-4 text-base font-normal tracking-wide text-[var(--gray-text-color)]">
+										Wir nutzen fortschrittliche CNC-Bearbeitung, additive Fertigung, Gussverfahren
+										und Vorrichtungsbau, um Genauigkeit, Langlebigkeit und Leistung in jedem Projekt
+										zu gewährleisten. Ob Metallteile, Verbundmodelle oder Polyurethanformen – unsere
+										Expertise sorgt für zuverlässige Ergebnisse in jeder Größenordnung.</p>
+									<div class="mb-8 flex flex-row space-x-6">
+										<div class="flex flex-1 flex-col">
+											<div
+												class="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--primary-color)] text-3xl text-[var(--light-text-color)]">
+												<i class="fa-thin fa-bullseye-arrow" aria-hidden="true"></i>
+											</div>
+											<div class="mb-1 text-2xl font-medium">Unser Engagement</div>
+											<div class="tracking-wide text-[var(--gray-text-color)]">Wir bieten
+												Full-Service-Fertigung – vom Einzelprototypen bis zur
+												Großserienproduktion – und garantieren Materialpräzision, technische
+												Zuverlässigkeit und Ausrichtung an den Zielen unserer Kunden.</div>
+										</div>
+										<div class="flex flex-1 flex-col">
+											<div
+												class="mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--primary-color)] text-3xl text-[var(--light-text-color)]">
+												<i class="fa-regular fa-eye" aria-hidden="true"></i>
+											</div>
+											<div class="mb-1 text-2xl font-medium">Unsere Vision</div>
+											<div class="tracking-wide text-[var(--gray-text-color)]">Wir stellen uns
+												eine Zukunft vor, in der Fertigung agil, skalierbar und für alle
+												Unternehmen zugänglich ist. Durch Innovation und Beständigkeit helfen
+												wir unseren Partnern, bessere Produkte schneller zu entwickeln.</div>
+										</div>
+									</div>
+									<a href="https://revenisis.com/de/kontakt"
+										class="inline-block bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-base font-semibold uppercase tracking-widest text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]">Kontakt
+										aufnehmen</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section x-data="timeline()" class="max-w-6xl mx-auto px-4 py-16 space-y-12 relative code-section">
+						<!-- Başlık -->
+						<h2
+							class="text-3xl font-semibold text-black text-center [font-family:var(--font-family-heading)]">
+							Unsere Fertigungsdienstleistungen </h2>
+						<!-- Stepper Çizgisi ve Noktalar -->
+						<div class="relative">
+							<!-- Çizgi -->
+							<div class="absolute inset-0 flex items-center" aria-hidden="true">
+								<div class="w-full h-1 bg-gray-700"></div>
+							</div>
+							<!-- Noktalar -->
+							<div class="relative flex justify-between">
+								<template x-for="(step, i) in steps" :key="i">
+									<button @click="current = i" :class="{
+									'bg-[var(--primary-color)] text-white': current === i,
+									'bg-gray-800 text-gray-400': current !== i
+								}" class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-600 transition"
+										:aria-label="step.title">
+										<span x-text="i+1"></span>
+									</button>
+								</template>
+							</div>
+						</div>
+						<!-- Detay Paneli -->
+						<div class="space-y-6">
+							<!-- Görsel / Video -->
+							<div class="rounded-xl overflow-hidden shadow-lg">
+								<template x-if="steps[current].video">
+									<video class="w-full h-96 object-cover" :src="steps[current].video"
+										controls></video>
+								</template>
+								<template x-if="!steps[current].video">
+									<img class="w-full h-96 object-cover" :src="steps[current].image"
+										:alt="steps[current].title" />
+								</template>
+							</div>
+							<!-- Başlık & Açıklama -->
+							<div
+								class="bg-black/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-xl text-black">
+								<h3 class="text-2xl font-semibold mb-4" x-text="steps[current].title"></h3>
+								<p class="text-gray-900 leading-relaxed" x-text="steps[current].desc"></p>
+							</div>
+						</div>
+						<!-- Prev / Next -->
+						<div class="flex justify-between">
+							<button @click="prev()" :disabled="current===0" class="px-6 py-2 rounded-lg border border-gray-600 text-black
+									disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-700 transition"> ← Prev </button>
+							<button @click="next()" :disabled="current===steps.length-1" class="px-6 py-2 rounded-lg border border-gray-600 text-black
+									disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-700 transition"> Next → </button>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="frame-content">
+			<div class="[font-family:var(--font-family-body)]">
+				<div>
+					<footer class="bg-black code-section" id="global-footer">
+						<div class="container mx-auto px-6 py-24 xl:px-12 2xl:px-36">
+							<div class="grid grid-cols-1 pt-4 md:grid-cols-2 lg:grid-cols-3 lg:space-x-24">
+								<div class="mb-8">
+									<a href="/de/"
+										class="mb-8 block text-3xl tracking-wider text-white [font-family:var(--font-family-heading)]"
+										data-logo="">
+										<img src="https://cdn.revenisis.com/images/revenisis_logo-invert.png"
+											alt="Revenisis Logo" class="h-30">
+									</a>
+									<p class="text-left font-light tracking-wider text-gray-100">Wir sind ein Ingenieur-
+										und Innovationsunternehmen, das weltweit schlüsselfertige Fertigung, Prototyping
+										und Produktentwicklung anbietet. Wir sind spezialisiert auf Präzisionsfertigung,
+										F&amp;E-Beratung und die Skalierung komplexer Hardwareprojekte. Unser Team
+										unterstützt Start-ups, KMU und Industriekunden mit End-to-End-Lösungen.</p>
+									<div class="my-8 flex flex-row justify-center text-gray-400 md:justify-start">
+										<a href="https://www.linkedin.com/company/revenisis/?originalSubdomain=en"
+											class="mr-3" aria-label="Besuchen Sie unser LinkedIn">
+											<div class="flex h-8 w-8 items-center justify-center rounded-full bg-white">
+												<i class="fa-brands fa-linkedin text-[var(--primary-color)]"
+													aria-hidden="true"></i>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="mb-8">
+									<div class="mb-8 border-b-2 border-white pb-4 text-xl tracking-wide text-white">
+										Kontaktieren Sie uns</div>
+									<div
+										class="mb-2 flex items-center flex-row font-light tracking-wider text-white [font-family:var(--font-family-body-2)]">
+										<i class="fa-solid fa-phone mr-2 w-6 flex-none text-white"
+											aria-hidden="true"></i>
+										<span id="footer-phone">+90 (505) 766-2939</span>
+									</div>
+									<div
+										class="mb-2 flex items-center flex-row font-light tracking-wider text-white [font-family:var(--font-family-body-2)]">
+										<i class="fa-solid fa-envelope mr-2 w-6 flex-none text-white"
+											aria-hidden="true"></i>
+										<span id="footer-email" class="w-[90%] break-words">info@revenisis.com</span>
+									</div>
+									<div
+										class="mb-2 flex items-center flex-row font-light tracking-wider text-white [font-family:var(--font-family-body-2)]">
+										<i class="fa-solid fa-location-dot mr-2 w-6 flex-none text-white"
+											aria-hidden="true"></i>
+										<span id="footer-address">Bakım Onarım 4. Sok., Zafer Mah., Yeni Sanayi Sitesi,
+											No.: 17 <br> Çorlu/TEKİRDAĞ <br> 59850 </span>
+									</div>
+									<div
+										class="mb-2 flex items-center flex-row font-light tracking-wider text-white [font-family:var(--font-family-body-2)]">
+										<i class="fa-solid fa-clock mr-2 w-6 flex-none text-white"
+											aria-hidden="true"></i>
+										<span id="footer-hours">Täglich erreichbar: 9:00 - 18:00 Uhr, Mo-Fr</span>
+									</div>
+								</div>
+							</div>
+							<p class="border-t-2 border-gray-600 py-4 text-left text-sm text-gray-500">© 2025 Revenisis,
+								Alle Rechte vorbehalten</p>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://revenisis.com/js/jquery-3.3.1.min.js"></script>
+	<script src="https://revenisis.com/js/jquery.sticky.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".js-sticky-header").sticky({
+				topSpacing: 0,
+				zIndex: 50
+			});
+			$("#mobile-menu-open").on("click", function (e) {
+				e.preventDefault();
+				$("#mobile-menu").toggleClass("translate-x-full translate-x-0");
+			});
+			$("#mobile-menu-close").on("click", function (e) {
+				e.preventDefault();
+				$("#mobile-menu").toggleClass("translate-x-0 translate-x-full");
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			document.querySelectorAll('#mobile-menu .arrow-collapse').forEach(function (btn) {
+				btn.addEventListener('click', function (e) {
+					e.preventDefault();
+					const submenu = btn.closest('li').querySelector('ul');
+					if (!submenu) return;
+					submenu.classList.toggle('hidden');
+					const icon = btn.querySelector('i');
+					if (icon) icon.classList.toggle('rotate-180');
+				});
+			});
+		});
+	</script>
+	<script>
+		function timeline() {
+			return {
+				current: 0,
+				steps: [{
+					title: 'Komponentenfertigung (Metall & Nichtmetall)',
+					image: 'https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/metal-processing.jpeg',
+					desc: 'Wir sind spezialisiert auf die Bearbeitung von Metall- und Nichtmetall-Materialien mit präzisen CNC-Technologien. Unsere Dienstleistungen umfassen Schneiden, Fräsen und Bohren von Metallen wie Stahl, Aluminium und Messing sowie fortschrittliche Bearbeitung von Verbundwerkstoffen und Polymeren. Wir entwerfen und fertigen kundenspezifische Teile, die auf spezifische Kundenanforderungen zugeschnitten sind, und unterstützen das Prototyping mit strenger Qualitätskontrolle im gesamten Prozess.',
+					video: 'https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/CNC milling.mp4'
+				}, {
+					title: 'Modell- und RTM-Modellbau (MDF, Verbundwerkstoff & Polyurethan)',
+					image: 'https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/model-manufacturing.jpg',
+					desc: 'Mit Expertise im Modellbau bieten wir hochpräzise CNC-Bearbeitung von MDF, Verbundwerkstoffen und Polyurethan an. Unser Team fertigt maßgeschneiderte RTM-Modelle und Muster für den Formenbau, wobei Genauigkeit und Langlebigkeit im Vordergrund stehen. Vom Design bis zum Test unterstützen unsere Lösungen die Produktentwicklung und ermöglichen schnelle Iterationszyklen für komplexe Prototypenanforderungen.',
+					video: 'https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/20220716_140303.mp4'
+				}, {
+					title: 'Hilfsvorrichtungen für CNC-Bearbeitung',
+					image: 'https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/auxiliary-fixtures.jpg',
+					desc: 'Wir entwerfen und fertigen Präzisionsvorrichtungen für 3-Achs- und 5-Achs-CNC-Schneidprozesse. Diese Hilfswerkzeuge verbessern die Schneidstabilität und Wiederholgenauigkeit, insbesondere bei komplexen Geometrien. Unsere Vorrichtungen sind auf Kundenworkflows zugeschnitten, steigern die Produktivität und minimieren menschliche Fehler. Jede Vorrichtung unterliegt einer strengen Qualitätskontrolle zur Leistungssicherung.',
+					video: ''
+				}, {
+					title: 'Prototypenfertigung (FDM & SLA)',
+					image: 'https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/prototype.jpgg',
+					desc: 'Unsere Rapid-Prototyping-Kapazitäten umfassen FDM- und SLA-3D-Drucktechnologien. Wir produzieren langlebige Kunststoffteile und hochdetaillierte Harzprototypen in kurzen Durchlaufzeiten. Von der iterativen Entwicklung bis zur endgültigen Lieferung beschleunigen unsere maßgeschneiderten Lösungen Innovationen und erfüllen dringende Kundenbedürfnisse mit voller Prozesskontrolle.',
+					video: ''
+				}, {
+					title: 'Polyurethanguss',
+					image: '',
+					desc: 'Wir bieten maßgeschneiderte Polyurethanguss-Dienstleistungen an, um robuste und präzise Teile für verschiedene industrielle Anwendungen herzustellen. Vom Formenbau bis zum fertigen Produkt gewährleisten wir Oberflächenqualität, Maßhaltigkeit und Produktionskonsistenz. Unser Workflow unterstützt Prototyping in frühen Phasen und Kleinserienfertigung unter Einhaltung strenger Qualitätsstandards.',
+					video: 'https://cdn.revenisis.com/images/engineering-manufacturing/manufacturing/PU casting.mp4'
+				}],
+				prev() {
+					if (this.current > 0) this.current--
+				},
+				next() {
+					if (this.current < this.steps.length - 1) this.current++
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>
